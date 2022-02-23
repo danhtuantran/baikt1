@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="ht"></p>
+    <input type="text" id="a"> 
+    <input type="text" id="b"> 
+    <button onclick="nhan()">Tính</button>
+    <script>
+        function nhan(){
+            let a = +document.getElementById("a").value;
+            document.getElementById("a").innerHTML=a;
+            let b = +document.getElementById("b").value;
+            document.getElementById("b").innerHTML=b;
+          
+            document.getElementById("ht").innerHTML="Chu vi của hình vuông độ dài "+a+" là: "+a*4;
+        }
+    </script>
+</body>
+</html>

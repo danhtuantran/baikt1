@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ht">Chương trình nhân 2 số:</h1>
+    <input type="text" id="so1"> 
+    <input type="text" id="so2"> 
+    <button onclick="nhan()">Tính</button>
+    <script>
+        function nhan(){
+            let so1 = +document.getElementById("so1").value;
+            document.getElementById("so1").innerHTML=so1;
+            let so2 = +document.getElementById("so2").value;
+            document.getElementById("so2").innerHTML=so2;
+          
+            document.getElementById("ht").innerHTML=so1+" X "+so2+" = "+so1*so2;
+        }
+    </script>
+</body>
+</html>
